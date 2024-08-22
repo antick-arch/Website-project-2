@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 pb-5">
+        <h2 class="mb-4 text-uppercase text-center">Order Form</h2>
+        <form id="orderForm" action="https://formspree.io/f/xovakyqj" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="First Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="Last Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNo">Contact No</label>
+                <input type="text" class="form-control" id="contactNo" name="Contact No" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address (where to deliver your product)</label>
+                <input type="text" class="form-control" id="address" name="Address" required>
+            </div>
+            <div class="form-group">
+                <label for="district">District</label>
+                <input type="text" class="form-control" id="district" name="District" required>
+            </div>
+            <div class="form-group">
+                <label for="policeStation">Police Station</label>
+                <input type="text" class="form-control" id="policeStation" name="Police Station" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="Country" required>
+            </div>
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" class="form-control" id="productName" name="Product Name" required>
+            </div>
+            <div class="form-group">
+                <label for="productId">Product ID</label>
+                <input type="text" class="form-control" id="productId" name="Product ID" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" class="form-control" id="quantity" name="Quantity" required>
+            </div>
+            <div>
+                <p>Bkash: 01797776889 <br>
+                    Nagad: 01941797375 <br>
+                    Bank account number : 73797499892 <br>
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="transactionId">Transaction ID</label>
+                <input type="text" class="form-control" id="transactionId" name="Transaction ID" required>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method</label>
+                <select class="form-control" id="paymentMethod" name="Payment Method" required>
+                    <option value="Bkash">Bkash</option>
+                    <option value="Nagad">Nagad</option>
+                    <option value="Bank">Bank</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
